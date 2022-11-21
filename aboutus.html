@@ -1,0 +1,291 @@
+<html>
+<body bgcolor="lightyellow;">
+  <br>
+  <center><span style="font-size:40px;color:#000080;margin-bottom:200px;">India's Leading Research & Innovation Driven Pvt. University.</span></center>
+  <nav>
+    <ul>
+      <li><a href="studentportal.html">Home</a></li>
+      <li><a href="aboutus.html">About</a></li>
+      <li><a href="#">Student Corner</a>
+                <ul class="ul-2">
+                    <li><a href="loginform.php">Login</a></li>
+                    <li><a href="registrationform.html">Registration</a></li>
+                    <li><a href="#">Exam Info</a></li>
+            
+                </ul>
+                 </li>
+            <li><a href="">Admission</a>
+            <ul class="ul-3">
+                    <li><a href="admissionform.html">Admission Form</a></li>
+                    <li><a href="#">Education Loan</a></li>
+                    
+                </ul>
+                 </li>
+             </li>
+            
+             </li>
+            <li><a href="contact.html">Contact</a></li>
+                <li><a href="">Institute</a>
+            <ul class="ul-3">
+                    <li><a href="adninlogin.php">Login</a></li>
+            
+            
+          </ul>
+           </li>
+       </li>
+      
+       </li>
+  </nav>
+  <style>
+
+*,html{
+  box-sizing: border-box;
+}
+
+
+body{
+  margin: 0;
+  padding: 0;
+  background: white;
+  font-family: 'Poppins',sans-serif;
+  font-size: 20px;
+}
+
+nav{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0; 
+  position: relative;
+  display: flex;
+}
+
+nav ul li{
+  list-style: none;
+  position: relative;
+  background: white;
+    color:black;
+    margin:1px;
+    border-radius: 4px;
+  }
+
+nav ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 30px 33px;
+  color:green;
+  display: block;
+  transition: 0.5s;
+  
+}
+
+nav ul li a:hover{
+  color: orange;
+
+
+
+}
+
+
+nav ul li:hover a:before{
+  transform: rotate(405deg);
+  border-color: white;
+
+}
+
+
+nav ul li ul{
+  display: block;
+  color:black;
+  width:250px;
+  position:absolute;
+  margin-top:1px;
+  font-size: 15px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(70px);
+   z-index: 100;
+}
+
+
+nav ul li ul li a{
+  padding: 18px;
+  text-align:left;
+  background-color: white;
+   z-index: 100;
+  }
+
+nav ul li ul li{
+   margin:1px;
+   border-radius: 4px;
+}
+
+
+nav ul li:hover ul{
+  opacity: 1;
+  visibility: visible;
+  transform:  translateY(0);
+}
+
+
+li:hover .ul-2 li:nth-child(1){
+  animation-name: menu1;
+  animation-duration: 0.4s;
+  animation-timing-function:ease-in-out;
+  
+}
+
+
+li:hover .ul-2 li:nth-child(2){
+  animation-name: menu2;
+  animation-duration: 0.4s;
+  animation-timing-function:ease-in-out;
+  
+}
+
+
+li:hover .ul-2 li:nth-child(3){
+  animation-name: menu1;
+  animation-duration: 0.4s;
+  animation-timing-function:ease-in-out;
+}
+
+
+li:hover .ul-2 li:nth-child(4){
+  animation-name: menu2;
+  animation-duration: 0.4s;
+  animation-timing-function:ease-in-out;
+  
+}
+
+@keyframes menu1{
+  0%{
+    opacity:0;
+  transform: translateX(100px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+
+@keyframes menu2{
+  0%{
+    opacity:0;
+  transform: translateX(-100px);
+  }
+
+  100%{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+
+
+li:hover .ul-3 li:nth-child(1){
+  animation-name: menu3;
+  animation-duration: 0.2s;
+  animation-timing-function:ease-in-out;
+  
+}
+
+
+li:hover .ul-3 li:nth-child(2){
+  animation-name: menu3;
+  animation-duration: 0.4s;
+  animation-timing-function:ease-in-out;
+  
+}
+
+
+li:hover .ul-3 li:nth-child(3){
+  animation-name: menu3;
+  animation-duration: 0.6s;
+  animation-timing-function:ease-in-out;
+}
+
+
+li:hover .ul-3 li:nth-child(4){
+  animation-name: menu3;
+  animation-duration: 0.8s;
+  animation-timing-function:ease-in-out;
+  
+}
+
+@keyframes menu3{
+  0%{
+    opacity:0;
+  transform: scaleX(2);
+  }
+
+  100%{
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+
+li:hover .ul-4 li:nth-child(1){
+  animation-name: menu4;
+  animation-duration: 0.2s;
+  animation-timing-function:ease-in-out;
+  
+}
+
+
+li:hover .ul-4 li:nth-child(2){
+  animation-name: menu4;
+  animation-duration: 0.4s;
+  animation-timing-function:ease-in-out;
+  
+}
+
+
+li:hover .ul-4 li:nth-child(3){
+  animation-name: menu4;
+  animation-duration: 0.6s;
+  animation-timing-function:ease-in-out;
+}
+
+
+li:hover .ul-4 li:nth-child(4){
+  animation-name: menu4;
+  animation-duration: 0.8s;
+  animation-timing-function:ease-in-out;
+  
+}
+
+@keyframes menu4{
+  0%{
+    opacity:0;
+  transform: rotateY(100deg) translateX(-325px);
+  }
+
+  100%{
+    opacity: 1;
+    transform:  rotateY(0deg) translateY(0);
+  }
+}
+
+
+</style>
+<br>
+<span style="margin-left: 500px;"><img src="slider2.jpg"></span>
+<br><br>
+<center><span style="font-family:color:black;font-size:40px;">PEACE-The College Of Science & Management</span></center>
+<br>
+<center><p style="font-family:color:black;font-size:20px;text-align:justify;margin-left:200px;margin-right: 100px;color:brown;">Genesis-Trinity is one of the India's elite business schools. Genesis-Trinity academic strength drives original and provocative business thinking, empowering our students to challenge conventional wisdom in a truly unique academic environment.
+Genesis-Trinity believes in building a Designer Persona in each student which is customized as per their capacity, dreams and aspirations. With this motive, Genesis-Trinity was established in the year 2008. It is one of the fastest growing colleges of India with a commitment to have state-of-the-art infrastructure, world class teaching faculty and enriched library. The facilities include Cafeteria, Cricket Stadium, Health club, Wifi enabled computer lab and campus.</p></center>
+</body>
+</html>
